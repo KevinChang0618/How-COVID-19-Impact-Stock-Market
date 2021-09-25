@@ -1,5 +1,5 @@
 # Project Goal
-We would like to know how COVID-19 affect the US stock market. Because of COVID-19, the world economic was got the big hit. Therefore, we want to know the US market's situation.
+We would like to know how COVID-19 affects the US stock market. Because of COVID-19, the world economy was got a big hit. Therefore, we want to know the US market's situation.
 
 # Methods
 We choose daily confirmed cases, daily deaths, and daily vaccinations to be our independent variables. And choose daily NASQAD index to be response variable.  
