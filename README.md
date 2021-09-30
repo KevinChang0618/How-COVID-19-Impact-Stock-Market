@@ -4,13 +4,14 @@ We would like to know how COVID-19 affects the US stock market. Because of COVID
 # Methods
 We choose daily confirmed cases, daily deaths, and daily vaccinations to be our independent variables. And choose daily NASQAD index to be response variable.  
 - Use linear regression to test how does the COVID-19 affect US market.  
-- Check residual plot and find heteroskedasticity problem and use Breusch-Pagan test to double check heteroskedasticity problem. (If p-value is siginificant, reject H0 of no heteroskedasticity => heteroscedasticity is present.)
+- Check residual plot and find heteroskedasticity problem and use<b> Breusch-Pagan test</b> to double check heteroskedasticity problem. (If p-value is siginificant, reject H0 of no heteroskedasticity => heteroscedasticity is present)  
+
 ![image](https://user-images.githubusercontent.com/67025904/134563425-3d9f512e-3545-416d-b635-db76d847734c.png)
 ![image](https://user-images.githubusercontent.com/67025904/134564427-696d0152-3790-48bb-8642-8b07e392c469.png)
 
 
-- Then we use Weight Least Square to fix it.  
-- Use Durbin- Watson test to check Series correlation problem and use Lagging(Adding lagged one day of close into predictors) to fix it. 
+- Then we use <b>Weight Least Square</b> to fix heteroskedasticity problem.  
+- Use <b>Durbin- Watson test</b> to check <b>Time Series</b> correlation problem and use <b>Lagging</b> (Adding lagged one day of close into predictors) to fix it. 
 ![image](https://user-images.githubusercontent.com/67025904/134565476-81d7a377-fc27-42a4-a2a1-0b7cf101b959.png)
 
 - OLS model become WLS model to avoid multicollinearity problems and add lagged one day predictors to avoid Series correlation problem. Then use stepwise to select variables for new model.  
