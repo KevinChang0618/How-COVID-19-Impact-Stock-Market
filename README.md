@@ -3,7 +3,7 @@ We would like to know how COVID-19 affects the US stock market. Because of COVID
 
 # Methods
 We choose daily confirmed cases, daily deaths, and daily vaccinations to be our independent variables. And choose daily NASQAD index to be response variable.  
-- Use linear regression to test how does the COVID-19 affect US market.  
+- Use linear regression to understand how does the COVID-19 affect US market.  
 - Check residual plot and find heteroskedasticity problem and use<b> Breusch-Pagan test</b> to double check heteroskedasticity problem. (If p-value is siginificant, reject H0 of no heteroskedasticity => heteroscedasticity is present)  
 
 ![image](https://user-images.githubusercontent.com/67025904/134563425-3d9f512e-3545-416d-b635-db76d847734c.png)
