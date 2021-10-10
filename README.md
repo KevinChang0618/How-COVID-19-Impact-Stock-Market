@@ -14,8 +14,8 @@ We choose daily confirmed cases, daily deaths, and daily vaccinations to be our 
 - Use <b>Durbin- Watson test</b> to check <b>Time Series</b> correlation problem and use <b>Lagging</b> (Adding lagged one day of close into predictors) to fix it. 
 ![image](https://user-images.githubusercontent.com/67025904/134565476-81d7a377-fc27-42a4-a2a1-0b7cf101b959.png)
 
-- <b>OLS model</b> become <b>WLS model</b> to avoid multicollinearity problems and add <b>lagged one day</b> predictors to avoid Series correlation problem. Then use <b>stepwise</b> to select variables for new model.  
-- Also, we create Ridge and LASSO regression to compare which model is the best.  
+- <b>OLS model</b> become <b>WLS model</b> to avoid multicollinearity problems and add <b>lagged one day</b> predictors to avoid Series correlation problem. Then use <b>stepwise</b> to select variables for new model. Our new model's RMSE is 229.9.  
+- Also, we create Ridge and LASSO regression to compare which model is the best. Ridge model's RMSE is 226.88 and LASSO's RMSE is 226.98.  
 - Ridge Regression is the best model with the lowest RMSE.  
  
 
