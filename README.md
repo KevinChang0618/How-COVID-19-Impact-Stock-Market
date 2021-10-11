@@ -20,6 +20,7 @@ Because we want to fit the lineat regression, our first step should check our da
 ![image](https://user-images.githubusercontent.com/67025904/134565476-81d7a377-fc27-42a4-a2a1-0b7cf101b959.png)
 
 - <b>OLS model</b> become <b>WLS model</b> to avoid heteroskedasticity problems and add <b>lagged one day</b> predictors to avoid Series correlation problem. Then use <b>stepwise</b> to select variables for new model.  
+   
 <b>Fit the model</b>
 - After cross validation on the new model, our new model's RMSE is 244.33.  
 - Also, we create Ridge and LASSO regression to compare which model is the best. Ridge model's RMSE is 238.241 and LASSO's RMSE is 238.38.  
