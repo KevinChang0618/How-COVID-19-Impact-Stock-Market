@@ -3,7 +3,7 @@ We would like to know how COVID-19 affects the US stock market. Because of COVID
 
 # Methods
 <b>Data Preprocessing</b>  
-Because we want to fit the lineat regression, our first step should check our data are follow OLS assumptions or not.   
+Because we want to fit the lineat regression, our first step should check our data follow OLS assumptions or not.   
 1. Check variables distribution.  
 2. Check VIF (X variables are independent).  
 3. Check QQ plot (Errors (residuals) are normally distributed).
