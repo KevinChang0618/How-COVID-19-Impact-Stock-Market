@@ -16,7 +16,7 @@ Because we want to fit the lineat regression, our first step should check our da
 
 - Then we use <b>Weight Least Square</b> to fix heteroskedasticity problem.  
 5. Check serial problem (Observations are independent).  
-- Use <b>Durbin- Watson test</b> to check <b>Time Series</b> correlation problem and use <b>Lagging</b> (Adding lagged one day of close into predictors) to fix it. 
+- Use <b>Durbin- Watson test</b> to check <b>Serial Correlation</b> problem and use <b>Lagging</b> (Adding lagged one day of close into predictors) to fix it. 
 ![image](https://user-images.githubusercontent.com/67025904/134565476-81d7a377-fc27-42a4-a2a1-0b7cf101b959.png)
 
 - <b>OLS model</b> become <b>WLS model</b> to avoid heteroskedasticity problems and add <b>lagged one day</b> predictors to avoid Series correlation problem. Then use <b>stepwise</b> to select variables for new model.  
