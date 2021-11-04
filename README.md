@@ -8,13 +8,13 @@ Because we want to fit the lineat regression, our first step should check our da
 2. Check VIF (X variables are independent).  
 3. Check QQ plot (Errors (residuals) are normally distributed).
 4. Check Heteroskedasticity (Errors (residuals) variance is constant).  
-- In residual plot, we find heteroskedasticity problem and use<b> Breusch-Pagan test</b> to double check heteroskedasticity problem. (If p-value is siginificant, reject H0 of no heteroskedasticity => heteroscedasticity is present)  
+- In residual plot, we find heteroskedasticity problem and use<b> Breusch-Pagan test</b> to double check heteroskedasticity problem. (If p-value is siginificant, reject H0: no heteroskedasticity => heteroscedasticity is present)  
 
 ![image](https://user-images.githubusercontent.com/67025904/134563425-3d9f512e-3545-416d-b635-db76d847734c.png)
 ![image](https://user-images.githubusercontent.com/67025904/134564427-696d0152-3790-48bb-8642-8b07e392c469.png)
 
 
-- Then we use <b>Weight Least Square</b> to fix heteroskedasticity problem.  
+- Then we use <b>Weighted Least Squares</b> to fix heteroskedasticity problem.  
 5. Check serial problem (Observations are independent).  
 - Use <b>Durbin- Watson test</b> to check <b>Serial Correlation</b> problem and use <b>Lagging</b> (Adding lagged one day of close into predictors) to fix it. 
 ![image](https://user-images.githubusercontent.com/67025904/134565476-81d7a377-fc27-42a4-a2a1-0b7cf101b959.png)
